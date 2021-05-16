@@ -1,0 +1,64 @@
+.give-your-email{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(45deg, #A3F267 50%, #97E65E 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.give-your-email h2{
+    font-size: 50px;
+}
+
+.give-your-email input{
+    height: 70px;
+    width: 400px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.end{
+    height: 200px;
+    background-color: #2D2430;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.find-us{
+    height: 40px;
+}
+
+.find-us li{
+    list-style-type: none;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.find-us ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+.find-us a{
+	text-decoration: none;
+	color: #756379;
+    font-size: 40px;
+    transition: all .2s;
+}
+
+.find-us a:hover{
+    color: #FFFFA2;
+}
+
+.any-bar{
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, #FFFFA2 20%, #A3F267 20%, #A3F267 40%, #00DAC2 40%, 
+    #00DAC2 60%, #00A3A8 60%, #00A3A8 80%, #2D2430 80%);
+}
