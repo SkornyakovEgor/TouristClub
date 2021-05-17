@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="HomePage.html">Home</a></li> 
                     <li><a href="Forum.html">Forum</a></li>  
-                    <li id="activePage"><a href="AboutUs.html">Contacts</a></li>
+                    <li id="activePage"><a href="Contacts.html">Contacts</a></li>
                     <li><a href="#">Account</a></li>
                 </ul>
             </div>
@@ -28,6 +28,37 @@
             </div>
         </div>
     </header>
+
+    <div class="modal-wrap hide">
+        <div class="modal hide" id="sign-in">
+            <button class="closeButton" data-modal="#sign-in">×</button>
+            <input type="text" placeholder="User name">
+            <input type="password" placeholder="Password">
+            <button class="logInButton">Log in</button>
+        </div>  
+        <div class="modal hide" id="sign-up">
+            <button class="closeButton" data-modal="#sign-up">×</button>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Age">
+            <input type="password" placeholder="Password">
+            <button class="logInButton">Sign up</button>
+        </div>
+    </div>
+
+    <div id="contacts-content">
+        <div id="false-block"></div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17N0h9obxzjN8Lsq_wZvE2LZuU5jfMeYC" 
+            width="640" height="480"></iframe>
+        </div>
+    </div>
+
+
+
+
+
 
     <footer>
         <div class="give-your-email">
@@ -44,19 +75,22 @@
 						<a href="https://www.instagram.com/activelivegp/"><i class="zmdi zmdi-instagram"></i></a>
 					</li>	
 					<li class="social_item">
-						<a href=""><i class="zmdi zmdi-facebook-box"></i></a>
+						<a href="https://www.facebook.com/activelifekent"><i class="zmdi zmdi-facebook-box"></i></a>
 					</li>
 					<li class="social_item">
 						<a href="https://www.youtube.com/user/touropia/videos"><i class="zmdi zmdi-youtube-play"></i></a>
 					</li>
 					<li class="social_item">
-						<a href=""><i class="zmdi zmdi-twitter"></i></a>
+						<a href="https://twitter.com/activelifeltd"><i class="zmdi zmdi-twitter"></i></a>
 					</li>
-				</ul>
+				</ul> 
             </div>
             <div class="any-bar">
             </div>
         </div>
     </footer>
+
+    
+    <script src="script/script.js"></script>
 </body>
 </html>
