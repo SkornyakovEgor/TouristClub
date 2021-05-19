@@ -136,6 +136,7 @@
 .activity-content div h3{
     margin-bottom: 40px;
     font-size: 30px;
+    color: #00DAC2;
 }
 
 #activity1{
@@ -215,3 +216,18 @@
     background-size: 100%;
 	background-repeat: no-repeat;
 }
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+#video-content{
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+
+video{
+    border-radius: 3px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+

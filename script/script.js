@@ -51,3 +51,28 @@ function showTabs(){
 }
 
 /*------------------------------------------------------------------------------------------------------*/
+
+let mas = ["/img/gallery/1.jpg",
+           "/img/gallery/2.jpg",
+           "/img/gallery/3.jpg",
+           "/img/gallery/4.jpg",
+           "/img/gallery/5.jpg",]; // массив картинок
+let to = 1;  // Счетчик, указывающий на текущую картинки
+
+function right_arrow() // Открытие следующей картинки(движение вправо)
+{ 
+    let obj = document.getElementById("img");
+        if (to < mas.length-1)  to++ ;
+        else
+            to = 0;
+            obj.src = mas[to];	 
+}
+
+function left_arrow() // Открытие предыдущей картинки(движение влево)
+{     
+    let obj = document.getElementById("img");
+        if (to > 0) to--;
+        else
+            to = mas.length-1;
+            obj.src = mas[to];	  			 
+}
