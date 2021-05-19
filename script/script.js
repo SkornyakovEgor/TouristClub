@@ -52,11 +52,11 @@ function showTabs(){
 
 /*------------------------------------------------------------------------------------------------------*/
 
-let mas = ["/img/gallery/1.jpg",
-           "/img/gallery/2.jpg",
-           "/img/gallery/3.jpg",
-           "/img/gallery/4.jpg",
-           "/img/gallery/5.jpg",]; // массив картинок
+let mas = ["../img/gallery/1.jpg",
+           "../img/gallery/2.jpg",
+           "../img/gallery/3.jpg",
+           "../img/gallery/4.jpg",
+           "../img/gallery/5.jpg",]; // массив картинок
 let to = 1;  // Счетчик, указывающий на текущую картинки
 
 function right_arrow() // Открытие следующей картинки(движение вправо)
