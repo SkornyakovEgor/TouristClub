@@ -226,11 +226,59 @@ video{
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
+#gallery{
+    min-width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
 
 #gallery h2{
-    text-align: center;
     color: #00A3A8;
     margin-top: 60px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
+#gallery>div{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+#img{
+    width: 100%;
+    height:85vh;
+    max-height: 85vh;
+    border-radius: 3px;
+}
+
+#arrow{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+#arrow img{
+    height: 40px;
+}
+
+#arrow>div{
+    opacity: 0.8;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#arrow div:hover{
+    opacity: 1;
+}
+
+#right-arrow{
+    transform: rotate(180deg);
+}
