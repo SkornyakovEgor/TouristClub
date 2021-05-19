@@ -12,4 +12,11 @@ button, a{
     cursor: pointer;
 }
 
+h2{
+    color: #00DAC2;
+    font-size: 40px;
+}
 
+h2 span{
+    color: #00A3A8;
+}

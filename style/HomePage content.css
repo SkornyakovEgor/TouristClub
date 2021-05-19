@@ -41,8 +41,6 @@
 }
 
 #about-club h2{
-    color: #00DAC2;
-    font-size: 40px;
     margin-bottom: 40px;
 }
 
@@ -74,9 +72,7 @@
     padding: 0 100px;
 }
 
-#activity span{
-    color: #00A3A8;
-}
+
 
 #activity h2{
     padding-top: 40px;
@@ -205,14 +201,14 @@
 }
 
 #activity6{
-    background-image: url(../img/road\ trip.jpg);
+    background-image: url(../img/road_trip.jpg);
     background-size: 100%;
 	background-repeat: no-repeat;
     background-position: center -100px;
 }
 
 #activ-tab6{
-    background-image: url(../img/active-tab6.jpg);
+    background-image: url(../img/active-tab6.jpg);  
     background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -230,4 +226,11 @@ video{
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
+
+#gallery h2{
+    text-align: center;
+    color: #00A3A8;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
 

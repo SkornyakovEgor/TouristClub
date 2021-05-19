@@ -56,20 +56,18 @@ let mas = ["../TouristClub/img/gallery/1.jpg",
            "../TouristClub/img/gallery/2.jpg",
            "../TouristClub/img/gallery/3.jpg",
            "../TouristClub/img/gallery/4.jpg",
-           "../TouristClub/img/gallery/5.jpg",]; // массив картинок
+           "../TouristClub/img/gallery/5.jpg"]; // массив картинок
 let to = 1;  // Счетчик, указывающий на текущую картинки
 
-function right_arrow() // Открытие следующей картинки(движение вправо)
-{ 
+function right_arrow(){ 
     let obj = document.getElementById("img");
-        if (to < mas.length-1)  to++ ;
+        if (to < mas.length-1)  to++;
         else
             to = 0;
             obj.src = mas[to];	 
 }
 
-function left_arrow() // Открытие предыдущей картинки(движение влево)
-{     
+function left_arrow(){     
     let obj = document.getElementById("img");
         if (to > 0) to--;
         else

@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 30px 50px;
     width: 500px;
-    background-color: #00A3A8;
+    background-color: #75DED9;
     margin: 100px auto;
     border-radius: 15px;
     order: 0;
@@ -16,7 +16,8 @@
     border: none;
     height: 40px;
     padding-left: 20px;
-    border-radius: 10px;
+    border: 1px solid #00A3B3;
+    border-radius: 3px;
     font-size: 25px;
 }
 
@@ -26,7 +27,7 @@
     height: 40px;
     padding: auto;
     border: 2px solid #fff;
-    background-color: #00A3A8;
+    background-color: #75DED9;
     border-radius: 50px;
     color: #fff;
     font-weight: 400;
@@ -50,18 +51,22 @@
 .logInButton{
     width: 150px;
     height: 35px;
-    border: 2px solid #fff;
-    border-radius: 10px;
+    border: none;
+    border-radius: 50px;
     font-size: 20px;
     margin-top: 20px;
     align-self: center;
-    background-color: #00A3A8;
-    color: #fff;
+    background-color: #ffff25;
+    color: #000;
     transition: all .2s;
 }
 
-.logInButton:hover, .closeButton:hover{
-    background-color: #62babd;
+.closeButton:hover{
+    background-color: #9feeea;
+}
+
+.logInButton:hover{
+    background-color: #FDFFAC;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -86,6 +91,7 @@ header p{
     text-align: center;
     font-size: 22px;
     margin-top: 20px;
+    margin-bottom: -72px;
 }
 
 #menu>ul{
@@ -107,7 +113,7 @@ header p{
 }
 
 #menu a:hover{
-    color: #FDFF7E;
+    color: #ffff25;
 }
 
 #navBlock{
@@ -131,7 +137,7 @@ header p{
 }
 
 #entrance>button{
-    background-color: #fdff7e;
+    background-color: #ffff25;
     border: none;
     color: #000;
     border-radius: 20px;
@@ -154,7 +160,6 @@ header>div>h1{
 }
 
 
-
 header a{
     color: #fff;
     text-decoration: none;
@@ -167,3 +172,22 @@ header a{
 .hide{
     display: none;
 } 
+
+#down img{
+    height: 170px;
+    width: 200px;
+    opacity: 0.9;
+    margin-top: 50px;
+    animation: chevron-down 1s infinite alternate ease-in-out;
+}
+
+@keyframes chevron-down{
+    0%{
+        margin-top: 80px;
+        opacity: 0.7;
+    }
+    100%{
+        margin-top: 100px;
+        opacity: 1s;
+    }
+}

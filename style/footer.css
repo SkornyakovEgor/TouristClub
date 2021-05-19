@@ -35,7 +35,7 @@
 .find-us li{
     list-style-type: none;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .find-us ul{
@@ -62,3 +62,15 @@
     background: linear-gradient(to right, #FFFFA2 20%, #A3F267 20%, #A3F267 40%, #00DAC2 40%, 
     #00DAC2 60%, #00A3A8 60%, #00A3A8 80%, #2D2430 80%);
 }
+
+.any-bar-revers{
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, #2D2430 20%, #00A3A8 20%, #00A3A8 40%, #00DAC2 40%, 
+    #00DAC2 60%, #A3F267 60%, #A3F267 80%, #FFFFA2 80%);
+}
+
+footer h2{
+    color: #fff;
+}
+
