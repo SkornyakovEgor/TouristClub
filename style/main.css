@@ -6,6 +6,8 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 100%;
 }
 
 button, a{
@@ -19,4 +21,11 @@ h2{
 
 h2 span{
     color: #00A3A8;
+}
+
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
 }

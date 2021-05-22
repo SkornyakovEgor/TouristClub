@@ -74,3 +74,13 @@ function left_arrow(){
             to = mas.length-1;
             obj.src = mas[to];	  			 
 }
+
+
+
+document.querySelector("#icon").onclick = function(){
+    document.querySelector("#navBlock").style.marginTop = "0px";
+}
+
+document.querySelector("#closeMenuButton").onclick = function(){
+    document.querySelector("#navBlock").style.marginTop = "-1000px";
+}

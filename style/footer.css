@@ -68,9 +68,21 @@
     width: 100%;
     background: linear-gradient(to right, #2D2430 20%, #00A3A8 20%, #00A3A8 40%, #00DAC2 40%, 
     #00DAC2 60%, #A3F267 60%, #A3F267 80%, #FFFFA2 80%);
+    border:none;
 }
 
 footer h2{
     color: #fff;
 }
 
+@media screen and (max-width: 630px){
+    .find-us ul{
+        justify-content: space-around;
+        margin-right: 0;
+
+    }
+    .find-us li{
+        margin-left: 0;
+
+    }
+}
