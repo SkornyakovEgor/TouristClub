@@ -57,7 +57,7 @@ let mas = ["../TouristClub/img/gallery/1.jpg",
            "../TouristClub/img/gallery/3.jpg",
            "../TouristClub/img/gallery/4.jpg",
            "../TouristClub/img/gallery/5.jpg"]; // массив картинок
-let to = 1;  // Счетчик, указывающий на текущую картинки
+let to = 0;  // Счетчик, указывающий на текущую картинки
 
 function right_arrow(){ 
     let obj = document.getElementById("img");
@@ -75,7 +75,7 @@ function left_arrow(){
             obj.src = mas[to];	  			 
 }
 
-
+/*------------------------------------------------------------------------------------------------------*/
 
 document.querySelector("#icon").onclick = function(){
     document.querySelector("#navBlock").style.marginTop = "0px";
@@ -83,4 +83,18 @@ document.querySelector("#icon").onclick = function(){
 
 document.querySelector("#closeMenuButton").onclick = function(){
     document.querySelector("#navBlock").style.marginTop = "-1000px";
+}
+
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function(){
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navBlock").style.top = "0";
+        document.getElementById("icon").style.top = "0";
+    } else {
+        document.getElementById("navBlock").style.top = "-100px";
+        document.getElementById("icon").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
 }
