@@ -189,7 +189,6 @@ header>div>h1{
     margin-top: 200px;
 }
 
-
 header a{
     color: #fff;
     text-decoration: none;
@@ -424,7 +423,7 @@ header a{
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) and (max-width: 2100px){
     #navBlock a{
         font-size: 30px;
     }
@@ -433,10 +432,80 @@ header a{
         width: 150px;
         height: 50px;
     }
+    #navBlock{
+        height: 100px;
+    }
     #main-title h1{
         font-size: 80px;
+        margin-top: 300px;
     }
     header p{
         font-size: 40px;
+    }
+    .modal{
+        width: 800px;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    .logInButton{
+        height: 50px;
+        font-size: 30px;
+    }
+    .modal>input{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width: 2100px){
+    #navBlock a{
+        font-size: 40px;
+    }
+    #navBlock button{
+        font-size: 40px;
+        width: 200px;
+        height: 60px;
+    }
+    #navBlock{
+        height: 150px;
+    }
+    #main-title h1{
+        font-size: 100px;
+        margin-top: 300px;
+    }
+    header{
+        background-position: bottom;
+    }
+    header p{
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .modal{
+        width: 800px;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    .logInButton{
+        height: 50px;
+        font-size: 30px;
+    }
+    .modal>input{
+        font-size: 30px;
+    }
+    #down img{
+        height: 210px;
+        width: 250px;
+        margin-top: 50px;
+        animation: chevron-down 1s infinite alternate ease-in-out;
+    }
+    @keyframes chevron-down{
+        0%{
+            margin-top: 80px;
+            opacity: 0.7;
+        }
+        100%{
+            margin-top: 120px;
+            opacity: 1;
+        }
     }
 }

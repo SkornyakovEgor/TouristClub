@@ -81,18 +81,14 @@
 
 #activity{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "title title"
-                         "mobil-tabs1 mobil-tabs1"
-                         "main-content main-content"
-                         "active-tabs1 active-tabs2" 
-                         "mobil-tabs2 mobil-tabs2";
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title "
+                         "main-content " 
+                         "dots";
     background-color: #EDFEFE;
     max-width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;  
-    padding: 0 100px;
+    padding: 40px 100px;
     align-items: center;
 }
 
@@ -173,17 +169,43 @@
     color: #00DAC2;
 }
 
+.dot{
+    height: 17px;
+    width: 17px;
+    margin: 0 7px;
+    background-color: #00DAC2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    grid-area: dots;
+    cursor: pointer;
+}
+  
+.active{
+    background-color: #00A3A8;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+} 
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 #activity1{
     background-image: url(../img/Parachute1.png);
     background-size: 100%;
 	background-repeat: no-repeat;
     background-position: 0px -200px;
-}
-
-#activ-tab1{
-    background-image: url(../img/active-tab1.jpg);
-    background-size: 100%;
-	background-repeat: no-repeat;
 }
 
 #activity2{
@@ -193,23 +215,10 @@
     background-position: center -200px;
 }
 
-#activ-tab2{
-    background-image: url(../img/active-tab2.jpg);
-    background-size: 100%;
-	background-repeat: no-repeat;
-}
-
 #activity3{
     background-image: url(../img/diving.png);
     background-size: 100%;
 	background-repeat: no-repeat;
-}
-
-#activ-tab3{
-    background-image: url(../img/active-tab3.jpg);
-    background-size: 100%;
-	background-repeat: no-repeat;
-
 }
 
 #activity4{
@@ -220,23 +229,11 @@
     
 }
 
-#activ-tab4{
-    background-image: url(../img/active-tab4.jpg);
-    background-size: 100%;
-	background-repeat: no-repeat;
-}
-
 #activity5{
     background-image: url(../img/Rafting2.jpg);
     background-size: 100%;
 	background-repeat: no-repeat;
     background-position: center -50px;
-}
-
-#activ-tab5{
-    background-image: url(../img/active-tab5.jpg);
-    background-size: 100%;
-	background-repeat: no-repeat;
 }
 
 #activity6{
@@ -245,20 +242,6 @@
 	background-repeat: no-repeat;
     background-position: center -100px;
 }
-
-#activ-tab6{
-    background-image: url(../img/active-tab6.jpg);  
-    background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.full-size{
-    display: block;
-}
-.mobil-size{
-    display: none;
-}
-
 /*-----------------------------------------------------------------------------------------------------------*/
 
 #video-content{
@@ -333,7 +316,126 @@ video{
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 2200px) and (max-width: 4000px){
+    .activity-content{
+        height: 1200px;
+    }
+    .dot{
+        margin: 20px 20px;
+        height: 30px;
+        width: 30px;
+    }
+    .activity-content div{
+        width: 1000px;
+    }
+    .activity-content p{
+        font-size: 30px;
+        padding: 40px;
+    }
+    .activity-content div h3{
+        font-size: 65px;
+        padding: 40px;
+    }
+    #activity h2{
+        font-size: 80px;
+    }
+    #about1 p, #about1 h2{
+        margin-left: 40px;
+    }
+    #about1 h2, #about2 h2{
+        font-size: 50px;
+    }
+    #about2 ul li span{
+        font-size: 40px;
+    }
+    #about1 img{
+        height: 400px;
+    }
+    #about2 img{
+        height: 500px;
+        max-height: none;
+    }
+    #about1 p, #about2 li{
+        font-size: 30px;
+    }  
+    #about-club h2{
+        margin-bottom: 40px;
+    }
+    #arrow img{
+        height: 60px;
+    }
+}
 
+@media screen and (min-width: 1900px) and (max-width: 2200px){
+    .activity-content{
+        height: 900px;
+    }
+    .dot{
+        margin: 20px 20px;
+        height: 30px;
+        width: 30px;
+    }
+    .activity-content div{
+        width: 700px;
+    }
+    .activity-content p{
+        font-size: 30px;
+    }
+    .activity-content div h3{
+        font-size: 55px;
+    }
+    #activity h2{
+        font-size: 60px;
+    }
+    
+}
+
+@media screen and (min-width: 1460px) and (max-width: 1900px){
+    #activity1,  #activity2,  #activity3,  #activity4,  #activity5,  #activity6{
+        background-position: center ;
+        background-size: cover;
+    }
+    .activity-content{
+        height: 700px;
+    }
+    .dot{
+        margin: 10px 10px;
+    }
+    .activity-content div{
+        width: 500px;
+    }
+    .activity-content p{
+        font-size: 20px;
+    }
+    .activity-content div h3{
+        font-size: 45px;
+    }
+    #activity h2{
+        font-size: 50px;
+    }
+    #about1 p, #about1 h2{
+        margin-left: 40px;
+    }
+    #about1 h2, #about2 h2{
+        font-size: 50px;
+    }
+    #about2 ul li span{
+        font-size: 40px;
+    }
+    #about1 img{
+        height: 400px;
+    }
+    #about2 img{
+        height: 500px;
+        max-height: none;
+    }
+    #about1 p, #about2 li{
+        font-size: 30px;
+    }  
+    #about-club h2{
+        margin-bottom: 40px;
+    }
+}   
 @media screen and (max-width: 1260px){
     .activity-content{
         max-height: 390px;
@@ -464,12 +566,6 @@ video{
         height: 200px;
         padding: 0px;
     }
-    #active1-3{
-        grid-area: mobil-tabs1;
-    }
-    #active4-6{
-        grid-area: mobil-tabs2;
-    }
     #gallery h2{
         margin-top: 180px;
     }
@@ -521,3 +617,4 @@ video{
         margin-top: 1px;
     }   
 }
+
