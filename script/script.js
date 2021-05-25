@@ -65,14 +65,16 @@ window.onscroll = function(){
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navBlock").style.top = "0";
         document.getElementById("icon").style.top = "0";
-    } else {
+    }else{
         document.getElementById("navBlock").style.top = "-150px";
         document.getElementById("icon").style.top = "-150px";
     }
+    if(document.querySelector("#navBlock").style.marginTop == "0px"){
+        document.getElementById("navBlock").style.top = "0";
+        document.getElementById("icon").style.top = "0";
+    }
     prevScrollpos = currentScrollPos;
 }
-/*------------------------------------------------------------------------------------------------------*/
-
 
 
 /*------------------------------------------------------------------------------------------------------*/
