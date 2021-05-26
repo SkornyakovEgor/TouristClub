@@ -50,6 +50,17 @@ function left_arrow(){
             obj.src = mas[to];	  			 
 }
 
+function preCacheHeros(){
+    $.each(mas, function(){
+        var img = new Image();
+        img.src = this;
+    });
+};
+ 
+$(window).load(function(){
+    preCacheHeros();
+});
+
 /*------------------------------------------------------------------------------------------------------*/
 
 document.querySelector("#icon").onclick = function(){
