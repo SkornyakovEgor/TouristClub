@@ -337,6 +337,21 @@ header a{
     }
 }
 
+@media screen and (max-width: 380px){
+    #closeMenuButton{
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 380px) and (max-height: 670px){
+    #main-title h1{
+        font-size: 50px !important;
+        margin-top: 100px !important;
+    }  
+}
+
 @media screen and (max-width: 330px){
     #down{
         margin-top: 0;
@@ -420,6 +435,34 @@ header a{
     }
     header p{
         font-weight: 800;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) and (min-width: 500px) and (max-height: 550px){
+    #navBlock{
+        flex-direction: row;
+        
+    }
+    #closeMenuButton{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .adaptive-menu{
+        width: 50vw;
+    }
+    #entrance{
+        width: 50vw;
+    }
+    #main-title h1{
+        font-size: 45px;
+    }
+    header p{
+        font-size: 23px;
+        margin: 10px 0;
     }
 }
 

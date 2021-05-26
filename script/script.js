@@ -131,7 +131,7 @@ function makeTimer(){
    clearInterval(timer) //Очистим интервал, это позволит прервать его работу и отменить перелистывание
    timer = setInterval(function(){
         showSlides(slideIndex);
-    },10000);
+    },8000);
  } 
 
 
