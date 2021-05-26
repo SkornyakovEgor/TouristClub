@@ -50,16 +50,7 @@ function left_arrow(){
             obj.src = mas[to];	  			 
 }
 
-function preCacheHeros(){
-    $.each(mas, function(){
-        var img = new Image();
-        img.src = this;
-    });
-};
- 
-$(window).load(function(){
-    preCacheHeros();
-});
+
 
 /*------------------------------------------------------------------------------------------------------*/
 
@@ -142,3 +133,15 @@ function makeTimer(){
         showSlides(slideIndex);
     },10000);
  } 
+
+
+ function preCacheHeros(){
+    $.each(mas, function(){
+        var img = new Image();
+        img.src = this;
+    });
+};
+ 
+$(window).load(function(){
+    preCacheHeros();
+});
