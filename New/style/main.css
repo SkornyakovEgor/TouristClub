@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    Outline: none
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 100%;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+h2{
+    color: #00DAC2;
+    font-size: 40px;
+}
+
+h2 span{
+    color: #00A3A8;
+}
+
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
+}
