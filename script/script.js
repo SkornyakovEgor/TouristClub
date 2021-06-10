@@ -27,11 +27,11 @@ function closeModal(){
 
 /*------------------------------------------------------------------------------------------------------*/
 
-let mas = ["../TouristClub/img/gallery/1.jpg",
-           "../TouristClub/img/gallery/2.jpg",
-           "../TouristClub/img/gallery/3.jpg",
-           "../TouristClub/img/gallery/4.jpg",
-           "../TouristClub/img/gallery/5.jpg"]; // массив картинок
+let mas = ["../img/gallery/1.jpg",
+           "../img/gallery/2.jpg",
+           "../img/gallery/3.jpg",
+           "../img/gallery/4.jpg",
+           "../img/gallery/5.jpg"]; // массив картинок
 let to = 0;  // Счетчик, указывающий на текущую картинки
 
 function right_arrow(){ 
@@ -78,6 +78,36 @@ window.onscroll = function(){
     prevScrollpos = currentScrollPos;
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+
+let accItem = document.getElementsByClassName('accordionItem');
+let accHD = document.getElementsByClassName('accordionItemHeading');
+for (i = 0; i < accHD.length; i++) {
+    accHD[i].addEventListener('click', toggleItem, false);
+}
+function toggleItem() {
+    let itemClass = this.parentNode.className;
+    for (i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+    }
+    if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+document.querySelector("#check").onclick = function(){
+    console.log(document.querySelector('#check').checked);
+    if(document.querySelector('#check').checked == true){
+        document.querySelector("#signup-submit").classList.remove('hide');
+        document.querySelector(".do-not-agree").classList.add('hide');
+    }
+    else if(document.querySelector('#check').checked == false){
+        document.querySelector(".do-not-agree").classList.remove('hide');
+        document.querySelector("#signup-submit").classList.add('hide');
+    }
+}
 
 /*------------------------------------------------------------------------------------------------------*/
 
@@ -142,6 +172,3 @@ function makeTimer(){
     });
 };
  
-$(window).load(function(){
-    preCacheHeros();
-});

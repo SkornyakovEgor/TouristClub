@@ -1,0 +1,262 @@
+header{
+    background-image: none !important;
+    height: auto;
+}
+body{
+    background-color: #75DED9;
+}
+
+#accountcontent{
+    background-image: url("../img/Color Balance 2.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 60px;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#information{
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 90%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    padding: 30px 100px;
+}
+
+#information>h1{
+    text-align: center;
+    font-size: 50px;
+    color: #008B8B;
+}
+
+form{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+
+#user-data{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sex{
+    max-width: 100px;
+}
+
+#user-data input{
+    border: 1px solid #CDD1DA;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 2px 20px;
+}
+
+#user-data div{
+    max-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#user-data2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choose-sex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#choose-sex label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px 50px;
+}
+
+.active1{
+    margin-right: 20px;
+}
+
+#update-button{
+    justify-self: center;
+}
+
+#update-button button{
+    font-size: 21px !important;
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    background-color: #FFFF25;
+    transition: all .2s;
+    justify-self: flex-end;
+}
+
+#update-button button:hover{
+    background-color: #FDFFAC;
+}
+
+form input{
+    font-size: 25px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.radio input {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+.radio__text {
+	position: relative;
+	padding: 0 0 0 40px;
+	cursor: pointer;
+    display: flex;
+    align-content: center;
+}
+.radio__text:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio__text:after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #00DAC2;
+	opacity: 0;
+	transition: .2s;
+}
+.radio input:checked + .radio__text:after {
+	opacity: 1;
+}
+
+@media screen and (max-width: 870px){
+    #information{
+        padding: 30px 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 730px){
+    form{
+        flex-direction: column;
+    }
+    #user-data{
+        align-items: center;
+        justify-content: center;
+    }
+    #user-data div{
+        width: 75%;
+    }
+    #user-data2{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    #information{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #update-button{
+        align-self: flex-end;
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 590px){
+    #information {
+        padding: 30px 5px;
+        height: 95%;
+    }
+    #user-data div{
+        width: 100%;
+    }
+    #user-data2{
+        padding-right: 10px;
+    }
+    #choose-sex label{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        padding: 5px 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #user-data div{
+        flex-direction: column;
+        margin-left:10px;
+    }
+    #information{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 570px){
+    #information{
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    #accountcontent{
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 730) and (max-height: 500px){
+    #information{
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    #information h1{
+        padding-top: 2000px;
+    }
+    #information form{
+        margin-top: 200px;
+        padding-top: 2000px;
+        height: 70%;
+    }
+
+}   

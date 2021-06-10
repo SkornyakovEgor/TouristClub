@@ -7,6 +7,7 @@
     margin-top: -50px;
     padding: 100px 50px;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 #about-club p{
@@ -238,16 +239,38 @@
 }
 /*-----------------------------------------------------------------------------------------------------------*/
 
-#video-content{
+/* #video-content{
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
     margin-top: 10px;
-    margin-bottom: 120px;
-    height: auto;
-    width: 80%;
+    padding: 100px;
 }
+ */
+#video-content {
+    position: relative;
+    padding-bottom: 40%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 70px;
+  }
 
-video{
-    border-radius: 3px;
-}
+#video-content iframe {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
@@ -380,6 +403,13 @@ video{
     }
     #activity h2{
         font-size: 60px;
+    }
+    #video-content{
+        width: 95%;
+    }
+    #video-content iframe{
+        width: 100%;
+        height: 800px;
     }
     
 }
@@ -539,9 +569,12 @@ video{
         margin-top: 50px;
     }
     #video-content{
-        width: 100%;
-        padding-top: 40px;  
-        margin-bottom: 0px;
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding-bottom: 56%;
+    }
+    #video-content iframe {
+        width: 100%; 
     }
     #active1-3{
         margin-left: 10px;
@@ -569,9 +602,7 @@ video{
         height: 200px;
         padding: 0px;
     }
-    #gallery h2{
-        margin-top: 180px;
-    }
+
     .activity-content div{
         height: 100%;
         width: 100%;
@@ -586,6 +617,7 @@ video{
         max-height: 450px;
     }
 }
+
 
 @media screen and (max-width: 530px){
     #about1 h2, #about2 h2{
