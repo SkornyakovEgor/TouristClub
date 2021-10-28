@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 1700px){
     #map{
-        width: 95%;
+        width: 650px;
     }
     #map iframe{
         width: 100%;
